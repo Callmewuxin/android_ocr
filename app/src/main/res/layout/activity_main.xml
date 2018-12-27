@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_openCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_findtext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="0dp"
+        android:text="相机拍照" />
+
+    <Button
+        android:id="@+id/choose_from_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="0dp"
+        android:text="相册" />
+
+    <Button
+        android:id="@+id/btn_gettext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="294dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/btn_findtext"
+        android:text="文字识别" />
+
+    <Button
+        android:id="@+id/btn_findtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="198dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="选取区域" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别图片文字"
+        android:visibility="gone"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/arrow_down_float"
+            android:adjustViewBounds="true"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_get"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_above="@+id/btn_openCamera"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:text="文本显示"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+
+
+
+</RelativeLayout>
